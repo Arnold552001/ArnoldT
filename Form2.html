@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is a prefilled form</title>
+</head>
+<body>
+<h1>Welcome to my form</h1>
+<FORM ACTION="submit_form.php" METHOD="POST">
+
+<!-- Basic text input -->
+Full Name: <INPUT TYPE="TEXT" NAME="fullname" PLACEHOLDER="John Doe" SIZE="30" MAXLENGTH="80"><BR>
+
+<!-- With a pre-filled default value -->
+City: <INPUT TYPE="TEXT" NAME="city" PLACEHOLDER="Kampala" SIZE="20"><BR>
+
+<!-- Phone number (limited to 14 chars) -->
+Phone (UG): <INPUT TYPE="TEXT" NAME="phone" SIZE="16" MAXLENGTH="14" PLACEHOLDER="+256 7XX XXX XXX"><BR>
+
+<!-- Student ID -->
+Student No: <INPUT TYPE="TEXT" NAME="stud_id" SIZE="12" PLACEHOLDER="01124875" MAXLENGTH="10"><BR>
+
+<p>Password:
+<input type="password" NAME="password" size="15" maxlength="30" PLACEHOLDER="password" VALUE="">
+</p>
+<P><B>Select your enrolled courses:</B></P>
+
+Web Technology:
+<INPUT TYPE="CHECKBOX" NAME="Course" VALUE="web_tech" CHECKED><BR>
+Database Management:<INPUT TYPE="CHECKBOX" NAME="course" VALUE="dbms"><BR>
+Software Engineering:<INPUT TYPE="CHECKBOX" NAME="course" VALUE="se"><BR>
+Cloud Computing:<INPUT TYPE="CHECKBOX" NAME="course" VALUE="cloud"><BR>
+
+<P><B>Select your Programme Level:</B></P>
+Certificate: <INPUT TYPE="RADIO" NAME="level" VALUE="cert"><BR>
+Diploma: <INPUT TYPE="RADIO" NAME="level" VALUE="dip" CHECKED><BR>
+Degree:<INPUT TYPE="RADIO" NAME="level" VALUE="deg"><BR>
+Masters:<INPUT TYPE="RADIO" NAME="level" VALUE="msc"><BR>
+<P><B>Mode of Study:</B></P>
+Day:<INPUT TYPE="RADIO" NAME="mode" VALUE="day" CHECKED><BR>
+Evening:<INPUT TYPE="RADIO" NAME="mode" VALUE="eve"><BR>
+Weekend:<INPUT TYPE="RADIO" NAME="mode" VALUE="wkd"><BR>
+</form>
+<p><i>This is a prefilled Form.</i></p>
+</body>
+</html>
