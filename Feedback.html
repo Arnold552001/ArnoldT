@@ -1,21 +1,45 @@
-<html>
-    <head>
-        <title>Feedback Form</title>
-    </head>
-        <body>
-            <FORM ACTION="feedback.php" METHOD="POST">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
 
-Name: <INPUT TYPE="TEXT" NAME="name" SIZE="30"><BR>
-Email: <INPUT TYPE="TEXT" NAME="email" SIZE="30"><BR>
-Comments: <TEXTAREA NAME="comments" ROWS="4" COLS="40"></TEXTAREA><BR>
-Rating:
-<INPUT TYPE="RADIO" NAME="rating" VALUE="5"> Excellent
-<INPUT TYPE="RADIO" NAME="rating" VALUE="3"> Average
-<INPUT TYPE="RADIO" NAME="rating" VALUE="1"> Poor<BR><BR>
+    <h2>Feedback Form</h2>
 
-<INPUT TYPE="SUBMIT" VALUE="Submit Feedback">
-<INPUT TYPE="RESET" VALUE="Clear All Fields">
+    <form action="feedback.php" method="post">
 
-</FORM>
-        </body>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" size="30" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" size="30" required>
+        <br><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="40" required></textarea>
+        <br><br>
+
+        <p>Rating:</p>
+
+        <input type="radio" id="excellent" name="rating" value="5" required>
+        <label for="excellent">Excellent</label>
+
+        <input type="radio" id="average" name="rating" value="3">
+        <label for="average">Average</label>
+
+        <input type="radio" id="poor" name="rating" value="1">
+        <label for="poor">Poor</label>
+
+        <br><br>
+
+        <input type="submit" value="Submit Feedback">
+        <input type="reset" value="Clear All Fields">
+
+    </form>
+
+</body>
 </html>
